@@ -1,17 +1,25 @@
-Yii 2 Advanced Project Template
-===============================
+# Restaurant realtime app powered by Yii2/Ratchet
 
 
-1) Install Zmq extension for php http://superuser.com/questions/585291/installing-zeromq-on-windows-7-wamp-server#answer-774973
-2) change your directory to root of project
-3) make "composer install"
-4) make "yii init"
-5) Create database "kitchen" or change params in common\config\main-local.php
-6) make "yii migrate"
-7) make "yii migrate --migrationPath=@yii/rbac/migrations/"
-8) make "yii rbac/init"
-8) make "yii socket/start-socket"
 
 
+### Installation
+
+Uncomment extension=php_sockets.dll in php.ini
+App requires  [ZeroMq](http://zeromq.org/) extension for php to run
+[Instructions](http://superuser.com/questions/585291/installing-zeromq-on-windows-7-wamp-server#answer-774973)  to install
+
+
+Create database "kitchen" or change params in common\config\main-local.php
+Change your dir. to root of project & install all migrations
+
+```sh
+$ composer install
+$ yii init
+$ yii migrate
+$ yii migrate --migrationPath=@yii/rbac/migrations/
+$ yii rbac/init
+$ yii socket/start-socket
+```
 
 
