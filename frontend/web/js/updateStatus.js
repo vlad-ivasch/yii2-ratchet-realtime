@@ -4,7 +4,7 @@ $(document).ready(function () {
         var __this = this;
 
         $.ajax({
-            url: '/kitchen/yii-application/frontend/web/index.php/kitchener/done',
+            url: 'done',
             type: 'post',
             data: {
                 'id': id
@@ -26,7 +26,7 @@ $(document).ready(function () {
             alert('Put cooking time in minutes');
         } else {
             $.ajax({
-                url: '/kitchen/yii-application/frontend/web/index.php/kitchener/change-status',
+                url: 'change-status',
                 type: 'post',
                 data: {
                     'id': id,
