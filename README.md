@@ -5,9 +5,8 @@
 
 ### Installation
 
-Uncomment extension=php_sockets.dll in php.ini
 App requires  [ZeroMq](http://zeromq.org/) extension for php to run
-[Instructions](http://superuser.com/questions/585291/installing-zeromq-on-windows-7-wamp-server#answer-774973)  to install
+[Instructions to install zmq](http://superuser.com/questions/585291/installing-zeromq-on-windows-7-wamp-server#answer-774973)
 
 
 Create database "yii2advanced" or change params in common\config\main-local.php
